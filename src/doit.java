@@ -30,6 +30,13 @@ public class doit extends HttpServlet {
     	pw.println("<br>");
         pw.println("My IP address is  : " + inetAddress);
 
+		pw.println("<label for='cars'>Choose a car:</label>");
+		pw.println("<select name='cars' id='cars'>");
+		pw.println("	<option value='volvo'>Volvo</option>");
+		pw.println("	<option value='saab'>Saab</option>");
+		pw.println("	<option value='mercedes'>Mercedes</option>");
+		pw.println("	<option value='audi'>Audi</option>");
+		pw.println("</select>");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
